@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+  font-family: 'Righteous', cursive;
+  color: #f7e320;
+  line-height: 1.7;
+  font-size: 19px;
+  background-color: #222222;
+  text-align: center;
+  background: url(./images/space-photo.jpg)
+}
+/*Home Page*/
+
+.home {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-link {
+  font-size: 40px;
+  background: #f7e320;
+  display: inline-block;
+  padding: 40px 80px;
+  color: black;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  text-transform: uppercase;
+}
+
+.home-link:hover {
+  border-radius: 5px;
+  background: #f7e320;
+}
+
+/*NavBar*/
+
+.navbar {
+  background-color: rgba(22, 22, 22, 0.8);
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  color: #efefef;
+  display: inline-block;
+  padding: 3px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+
+.link:hover {
+  color: #f7e320;
+  transform: scale(1.1);
+}
+
+/*NASA Page*/
+
+.nasa-photo {
+  display: block;
+  padding: 40px;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+.nasa-photo img {
+  width: 100%;
+  object-fit: contain;
+  max-height: unset;
+}
+
+.nasa-photo h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nasa-photo .date {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.nasa-photo .explanation {
+  font-family: "Poppins";
+  color: white;
+}
+
+@media (max-width: 1280px) {
+  .nasa-photo {
+    display: block;
+  }
+
+  .nasa-photo img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
